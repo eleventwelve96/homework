@@ -1,0 +1,21 @@
+.block {
+    background: rgb(230, 143, 36);
+    width: 1200px;
+    height: 800px;
+    overflow: scroll;
+    border-radius: 20px;
+    border-top: 5px outset black;
+    border-bottom: 5px outset black;
+    border-left: 5px outset black;
+}
+.block1 {
+    width: 200px;
+    height: 200px;
+    background: rgb(241, 39, 225);
+    color: rgb(4, 39, 70);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+    box-shadow: 30px 10px 25px rgb(135, 11, 236);
+}
