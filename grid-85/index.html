@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid сетка</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Grid сетки - Явная и неявная</h1>
+        <div class="grid-container">
+            <div class="grid-title">Явная Grid сетка</div>
+            <div class="explicit-grid">
+                <div class="grid-item explicit-item span-two-rows">1<br></div>
+                <div class="grid-item explicit-item wide-item">2</div>
+                <div class="grid-item explicit-item">3</div>
+                <div class="grid-item explicit-item wide-item">4</div>
+                <div class="grid-item explicit-item">5</div>
+            </div>
+            <div class="explanation">
+                Явная сетка — это сетка, где количество строк и колонок задано явно с помощью свойств
+                grid-template-columns и grid-template-rows.
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-title">Неявная Grid сетка</div>
+            <div class="implicit-grid">
+                <div class="grid-item implicit-item span-two-columns">1</div>
+                <div class="grid-item implicit-item">2</div>
+                <div class="grid-item implicit-item">3</div>
+                <div class="grid-item implicit-item">4</div>
+                <div class="grid-item implicit-item">5</div>
+                <div class="grid-item implicit-item">6</div>
+            </div>
+            <div class="explanation-implicit">
+                Неявная сетка — это сетка, где дополнительные строки или колонки создаются автоматически при
+                необходимости, с помощью свойств grid-auto-columns и grid-auto-rows.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
