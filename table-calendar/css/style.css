@@ -1,0 +1,55 @@
+.calendar-container {
+    margin: 20px;
+    display: inline-block;
+}
+
+.calendar {
+    border-collapse: collapse;
+    border: 2px solid #333;
+    font-size: 16px;
+}
+
+.calendar th,
+.calendar td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+.calendar th {
+    font-weight: bold;
+}
+
+.calendar .header {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+}
+
+.calendar .weekdays th {
+    font-weight: bold;
+    padding: 8px;
+}
+
+.calendar .weekdays th:nth-child(6),
+.calendar .weekdays th:nth-child(7) {
+    color: red;
+}
+
+.calendar td {
+    position: relative;
+}
+
+.calendar td:nth-child(6),
+.calendar td:nth-child(7) {
+    color: red;
+}
+
+.calendar td.empty {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
