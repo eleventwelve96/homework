@@ -1,0 +1,68 @@
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* header */
+
+.header-container {
+    width: 1220px;
+    height: 105px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 30px 0px;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--Stroke, rgba(211, 203, 217, 1));
+    margin: 0 350px;
+}
+
+.logo.png {
+    width: 84px;
+    height: 45px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    color: #007bff;
+}
+
+
+.contact-info {
+    width: 240px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.free-visit {
+    color: #858E8A;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.phone {
+    color: #2C332F;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+}
