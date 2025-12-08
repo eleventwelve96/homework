@@ -1,0 +1,132 @@
+html {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.text {
+  color: #535755;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.text-h3 {
+  color: #2C332F;
+}
+
+.button {
+  display: inline-block;
+  padding: 19px 32px 19px 32px;
+  color: #FFFFFF;
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 2%;
+  text-align: center;
+  text-transform: uppercase;
+  background: #3596ED;
+  transition: opacity 0.2s, background-color 0, 2s;
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+.button:active {
+  background-color: #2087e0;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.section {
+  margin-bottom: 140px;
+}
+
+.title-lerge {
+  max-width: 596px;
+  margin-bottom: 40px;
+  font-family: Oswald;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  font-size: 48px;
+}
+
+.text-sub {
+  color: #858E8A;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+}
+
+
+
+a,
+button {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible
+summary:focus-visible {
+  outline: 2px solid #3596ED;
+  outline-offset: 1px;
+}
+
+a:active {
+  color: #3596ED;
+}
+
+.title-medium {
+  color: #2C332F;
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 115%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
