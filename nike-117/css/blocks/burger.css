@@ -1,0 +1,35 @@
+@media (width > 768px) {
+    .burger {
+        display: none;
+    }
+}
+
+@media (width <=768px) {
+    .burger {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .burger__icon-menu {
+        color: var(--accent-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .burger__icon-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        fill: none;
+        stroke: currentColor;
+    }
+
+    .burger.active .burger__icon-menu {
+        display: none;
+    }
+}

@@ -1,0 +1,120 @@
+.header {
+    padding-block: 42px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+
+}
+
+.header--fixed {
+    box-shadow: 0px 0px 20px 0px var(--shadow-color);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-right: clamp(30px, 5vw, 120px);
+}
+
+
+
+@media (width > 768px) {
+    .header__menu {
+        flex-grow: 1;
+    }
+}
+
+@media (width <=768px) {
+    .header__menu {
+        display: none;
+    }
+}
+
+.header__controls {
+    display: flex;
+    align-items: center;
+}
+
+@media (width > 992px) {
+    .header__controls {
+        gap: 60px;
+    }
+}
+
+@media (width <=992px) {
+    .header__controls {
+        gap: 30px;
+    }
+}
+
+.header__order {
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--accent-color, rgba(255, 234, 0, 1));
+    padding-bottom: 5px;
+    color: var(--accent-color, rgba(255, 234, 0, 1));
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: left;
+}
+
+@media (any-hover: hover) {
+    .header__order:hover::before {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.header__order::before {
+    content: "";
+    display: block;
+    filter: blur(30px);
+    background-color: var(--accent-color, rgba(255, 234, 0, 1));
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-time), visibility var(--transition-time);
+    width: 90%;
+    min-height: 11px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (width > 768px) {
+    .header__actions {
+    display: flex;
+    gap: 20px;
+}
+}
+
+@media (width <= 768px) {
+    .header__actions {
+    display: flex;
+    gap: 30px;
+}
+}
+
+.header__actions-button {
+    color: var(--main-color);
+    transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+    .header__actions-button:hover {
+        color: var(--accent-color);
+    }
+}
+
+.header__actions-button:active {
+    color: var(--accent-color);
+}
+
