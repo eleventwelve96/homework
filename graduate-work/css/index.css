@@ -1,0 +1,10 @@
+/* Общие */
+@import "./general/normalize.css";
+@import "./general/fonts.css";
+@import "./general/vars.css";
+@import "./general/globals.css";
+
+
+/* Отдельные стили */
+
+@import "./blocks/header.css";
