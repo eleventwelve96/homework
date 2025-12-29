@@ -1,4 +1,3 @@
-/* === Блок: style-selector === */
 .style-selector {
   background-color: #f0f0f0;
   padding: 70px 64px;
@@ -36,13 +35,11 @@
   width: 100%;
 }
 
-/* === Десктоп: 2 строки × 3 колонки для гибкости === */
 @media (min-width: 901px) {
   .style-selector__grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* Позиционируем карточки по порядку — без grid-row */
   .style-selector__grid > :nth-child(1) {
     grid-column: 1;
   }
@@ -56,37 +53,30 @@
     grid-column: 3;
   }
 
-  /* Высота для десктопа */
   .style-card {
     height: 250px;
   }
 }
 
-/* === Мобильный: все карточки — одна колонка, каждая на своей строке === */
 @media (max-width: 900px) {
   .style-selector__grid {
-    grid-template-columns: 1fr; /* ОДНА КОЛОНКА */
+    grid-template-columns: 1fr;
   }
 
-  /* Все карточки — по одной в строке */
   .style-selector__grid > .style-card {
     grid-column: 1;
-    /* grid-row: auto — по умолчанию, не нужно явно указывать */
   }
 
-  /* Сбрасываем модификаторы размера — они не нужны в мобильной версии */
   .style-card_size_narrow,
   .style-card_size_wide {
     grid-column: span 1;
   }
 
-  /* Высота для мобильных */
   .style-card {
     height: 200px;
   }
 }
 
-/* === Блок: style-card === */
 .style-card {
   background: white;
   border-radius: 20px;

@@ -119,12 +119,6 @@
   padding-bottom: 8px;
 }
 
-/* @media (width <= 450px) {
-.product-info {
-  padding-bottom: 40px;
-}
-} */
-
 .product-title {
   font-family: var(--font-family);
   font-weight: 700;

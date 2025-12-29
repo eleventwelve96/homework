@@ -19,7 +19,6 @@
   display: block;
 }
 
-/* Применяем исходные размеры по порядку элементов */
 .brands__item:nth-child(2) .brands__logo {
   width: 91px;
   height: 38px;

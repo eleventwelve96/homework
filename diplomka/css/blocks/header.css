@@ -1,4 +1,3 @@
-/* === Top Bar === */
 .top-bar {
   position: fixed;
   top: 0;
@@ -117,7 +116,6 @@ body.top-bar--open .header {
   }
 }
 
-/* === Header === */
 .header__container {
   display: flex;
   align-items: center;
@@ -208,7 +206,6 @@ body.top-bar--open .header {
   }
 }
 
-/* === Search === */
 .header__search {
   position: relative;
 }
@@ -298,7 +295,6 @@ body.top-bar--open .header {
   gap: 14px;
 }
 
-/* === Burger Menu === */
 .burger-logo__button {
   display: none;
   flex-direction: column;
@@ -423,7 +419,6 @@ body.top-bar--open .header {
   }
 }
 
-/* === Mobile Search === */
 .header__search-mobile-button {
   background: none;
   border: none;
