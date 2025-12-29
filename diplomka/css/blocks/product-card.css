@@ -1,6 +1,16 @@
-.section__grid {
+.section__grid--border {
   padding-bottom: 64px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section__grid  {
+  padding-bottom: 80px;
+}
+
+@media (width <= 900px) {
+.section__grid  {
+  padding-bottom: 50px;
+}
 }
 
 .section-title {

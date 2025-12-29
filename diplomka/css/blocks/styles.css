@@ -1,0 +1,130 @@
+/* === Блок: style-selector === */
+.style-selector {
+  background-color: #f0f0f0;
+  padding: 70px 64px;
+  border-radius: 40px;
+  max-width: 1239px;
+  margin: 0 auto;
+}
+
+@media (width <= 900px) {
+  .style-selector {
+    padding: 40px 24px;
+  }
+}
+
+.style-selector__title {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+  color: #000;
+  padding-bottom: 64px;
+}
+
+@media (width <= 900px) {
+  .style-selector__title {
+    font-size: 30px;
+    line-height: 120%;
+    padding-bottom: 28px;
+  }
+}
+
+.style-selector__grid {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+}
+
+/* === Десктоп: 2 строки × 3 колонки для гибкости === */
+@media (min-width: 901px) {
+  .style-selector__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Позиционируем карточки по порядку — без grid-row */
+  .style-selector__grid > :nth-child(1) {
+    grid-column: 1;
+  }
+  .style-selector__grid > :nth-child(2) {
+    grid-column: 2 / span 2;
+  }
+  .style-selector__grid > :nth-child(3) {
+    grid-column: 1 / span 2;
+  }
+  .style-selector__grid > :nth-child(4) {
+    grid-column: 3;
+  }
+
+  /* Высота для десктопа */
+  .style-card {
+    height: 250px;
+  }
+}
+
+/* === Мобильный: все карточки — одна колонка, каждая на своей строке === */
+@media (max-width: 900px) {
+  .style-selector__grid {
+    grid-template-columns: 1fr; /* ОДНА КОЛОНКА */
+  }
+
+  /* Все карточки — по одной в строке */
+  .style-selector__grid > .style-card {
+    grid-column: 1;
+    /* grid-row: auto — по умолчанию, не нужно явно указывать */
+  }
+
+  /* Сбрасываем модификаторы размера — они не нужны в мобильной версии */
+  .style-card_size_narrow,
+  .style-card_size_wide {
+    grid-column: span 1;
+  }
+
+  /* Высота для мобильных */
+  .style-card {
+    height: 200px;
+  }
+}
+
+/* === Блок: style-card === */
+.style-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.style-card:hover {
+  transform: translateY(-5px);
+}
+
+.style-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+@media (width <= 900px) {
+  .style-card__image {
+    filter: blur(2px);
+  }
+}
+
+@media (width <= 1260px) {
+  .style-card__image {
+    object-fit: cover;
+  }
+}
+
+.style-card__label {
+  position: absolute;
+  top: 25px;
+  left: 36px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  color: #000;
+}
