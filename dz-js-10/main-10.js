@@ -41,7 +41,7 @@ console.log(birthYear);
 
 // Задача 3
 
-console.log("Меня зовут ${firstName} ${lastName}, мне ${age} лет. Я ученик курса.");
+console.log(`Меня зовут ${firstName} ${lastName}, мне ${age} лет. Я ученик курса.`);
 
 // Задача 4
 
