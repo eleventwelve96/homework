@@ -6,7 +6,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url('/fonts/FONTSPRINGDEMO-IntegralCFRegular.woff2') format('woff2');
+    src: url('../../fonts/FONTSPRINGDEMO-IntegralCFRegular.woff2') format('woff2');
 }
 
 /* Bold */
@@ -15,7 +15,7 @@
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-    src: url('/fonts/FONTSPRINGDEMO-IntegralCFBoldRegular.woff2') format('woff2');
+    src: url('../../fonts/FONTSPRINGDEMO-IntegralCFBoldRegular.woff2') format('woff2');
 }
 
 /* Heavy */
@@ -24,7 +24,7 @@
     font-weight: 900;
     font-style: normal;
     font-display: swap;
-    src: url('/fonts/FONTSPRINGDEMO-IntegralCFHeavyRegular.woff2') format('woff2');
+    src: url('../../fonts/FONTSPRINGDEMO-IntegralCFHeavyRegular.woff2') format('woff2');
 }
 
 /* ———— SATOSHI ———— */
@@ -35,7 +35,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url('/fonts/Satoshi-Regular.woff2') format('woff2');
+    src: url('../../fonts/Satoshi-Regular.woff2') format('woff2');
 }
 
 /* Medium */
@@ -44,7 +44,7 @@
     font-weight: 500;
     font-style: normal;
     font-display: swap;
-    src: url('/fonts/Satoshi-Medium.woff2') format('woff2');
+    src: url('../../fonts/Satoshi-Medium.woff2') format('woff2');
 }
 
 /* Bold */
@@ -53,6 +53,7 @@
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-    src: url('/fonts/Satoshi-Bold.woff2') format('woff2');
+    src: url('../../fonts/Satoshi-Bold.woff2') format('woff2');
 }
+
 
